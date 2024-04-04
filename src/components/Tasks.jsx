@@ -12,7 +12,7 @@ const Tasks = ({ task, deleteTask, editTask }) => {
   return (
     <div className='bg-gray-300 px-4  flex justify-between items-center border border-gray-400'>
 
-      {isCompleted ? <p onClick={onTaskClick} className='text-[#2b2b2b] line-through'>{task}</p>  : <p onClick={onTaskClick} className='text-[#2b2b2b]'>{task}</p>}
+      {isCompleted ? <p onClick={onTaskClick} className='text-[#2b2b2b] line-through cursor-pointer'>{task}</p>  : <p onClick={onTaskClick} className='text-[#2b2b2b] cursor-pointer'>{task}</p>}
 
       <div>
 
